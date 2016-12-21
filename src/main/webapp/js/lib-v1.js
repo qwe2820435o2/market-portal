@@ -693,7 +693,7 @@ var TrimPath;
 }(jQuery), function(a) {
     a.fn.Jlazyload = function(b, c) {
         if (this.length) {
-            var d, e, f = a.extend({type: null,offsetParent: null,source: "data-lazyload",placeholderImage: "/WEB-INF/images/blank.gif",placeholderClass: "loading-style2",threshold: 200}, b || {}), g = this, h = function(a) {
+            var d, e, f = a.extend({type: null,offsetParent: null,source: "data-lazyload",placeholderImage: "/images/blank.gif",placeholderClass: "loading-style2",threshold: 200}, b || {}), g = this, h = function(a) {
                 for (var b = a.scrollLeft, c = a.scrollTop, d = a.offsetWidth, e = a.offsetHeight; a.offsetParent; )
                     b += a.offsetLeft, c += a.offsetTop, a = a.offsetParent;
                 return {left: b,top: c,width: d,height: e}
@@ -1588,7 +1588,7 @@ pageConfig.FN_InitSidebar = function() {
         this.addItem("<a href='#' class='gotop' title='\u4f7f\u7528\u5feb\u6377\u952eT\u4e5f\u53ef\u8fd4\u56de\u9876\u90e8\u54e6\uff01'><b></b>\u8fd4\u56de\u9876\u90e8</a>")
     }
 }, pageConfig.FN_InitContrast = function(a, b, c) {
-    var a = a || "_contrast", c = c || "list", b = b || "http://misc.360buyimg.com/contrast/WEB-INF/js/contrast.js?ver=" + +new Date, d = readCookie(a + "_status");
+    var a = a || "_contrast", c = c || "list", b = b || "http://misc.360buyimg.com/contrast/js/contrast.js?ver=" + +new Date, d = readCookie(a + "_status");
     return pageConfig.isInitContrast ? !1 : ("show" != d && "side" != d || 1 != !!readCookie(a) ? $(".btn-compare").bind("click", function() {
         var d = this.getAttribute("skuid");
         $.getScript(b, function() {

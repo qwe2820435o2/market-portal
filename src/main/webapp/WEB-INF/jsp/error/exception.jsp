@@ -16,18 +16,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>出错了 -淘淘商城</title>
 <!--结算页面样式-->
-<link rel="stylesheet" type="text/css" href="/WEB-INF/css/base.css" media="all" />
-<link type="text/css" rel="stylesheet" href="/WEB-INF/css/order-commons.css"
+<link rel="stylesheet" type="text/css" href="/css/base.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/css/order-commons.css"
 	source="widget" />
-<script type="text/javascript" src="/WEB-INF/js/jquery-1.6.4.js"></script>
-<script type="text/javascript" src="/WEB-INF/js/base.js"></script>
-<script type="text/javascript" src="/WEB-INF/js/order.common.js"></script>
-<script type="text/javascript" src="/WEB-INF/js/jquery.checkout.js"></script>
+<script type="text/javascript" src="/js/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/order.common.js"></script>
+<script type="text/javascript" src="/js/jquery.checkout.js"></script>
 </head>
 <body id="mainframe">
 	<div class="w w1 header clearfix">
 		<div id="logo">
-			<a href="/"><img src="/WEB-INF/images/taotao-logo.gif" alt="淘淘商城"></a>
+			<a href="/"><img src="/images/taotao-logo.gif" alt="淘淘商城"></a>
 		</div>
 	</div>
 
@@ -41,7 +41,7 @@
 	width: 750px;
 	height: 220px;
 	background:
-		url(/WEB-INF/images/errordog.jpg)
+		url(/images/errordog.jpg)
 		0 0;
 	position: relative
 }

@@ -8,8 +8,8 @@
 	<title>${item.title } - 淘淘</title>
 	<script>var jdpts = new Object(); jdpts._st = new Date().getTime();</script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" href="/WEB-INF/css/taotao.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="/WEB-INF/css/pshow.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/css/taotao.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/css/pshow.css" media="all" />
 	<script type="text/javascript">
     	window.pageConfig = {
 			compatible: true,
@@ -246,18 +246,18 @@
 	</div><!--right end-->
 	
 	<div class="left">
-		<div id="miaozhen7886" class="m"><a href="http://c.nfa.jd.com/adclick?sid=2&amp;cid=163&amp;aid=817&amp;bid=7853&amp;unit=69570&amp;advid=156740&amp;guv=&amp;url=http://sale.jd.com/act/IFkpQYSVnG1Jet.html" target="_blank"><img data-img="2" width="211" height="261" src="http://image.taotao.com/WEB-INF/images/2014/10/23/2014102305423212301343.jpg" class="loading-style2"></a></div>
-		<div id="miaozhen7886" class="m"><a href="http://c.nfa.jd.com/adclick?sid=2&amp;cid=163&amp;aid=817&amp;bid=7853&amp;unit=69570&amp;advid=156740&amp;guv=&amp;url=http://sale.jd.com/act/IFkpQYSVnG1Jet.html" target="_blank"><img data-img="2" width="211" height="261" src="http://image.taotao.com/WEB-INF/images/2014/10/23/2014102305423212301343.jpg" class="loading-style2"></a></div>
+		<div id="miaozhen7886" class="m"><a href="http://c.nfa.jd.com/adclick?sid=2&amp;cid=163&amp;aid=817&amp;bid=7853&amp;unit=69570&amp;advid=156740&amp;guv=&amp;url=http://sale.jd.com/act/IFkpQYSVnG1Jet.html" target="_blank"><img data-img="2" width="211" height="261" src="http://image.taotao.com/images/2014/10/23/2014102305423212301343.jpg" class="loading-style2"></a></div>
+		<div id="miaozhen7886" class="m"><a href="http://c.nfa.jd.com/adclick?sid=2&amp;cid=163&amp;aid=817&amp;bid=7853&amp;unit=69570&amp;advid=156740&amp;guv=&amp;url=http://sale.jd.com/act/IFkpQYSVnG1Jet.html" target="_blank"><img data-img="2" width="211" height="261" src="http://image.taotao.com/images/2014/10/23/2014102305423212301343.jpg" class="loading-style2"></a></div>
 	</div><!--left end-->
 	<span class="clr"></span>
 </div>
 <!-- footer start -->
 <jsp:include page="commons/footer.jsp" />
 <!-- footer end -->
-<script type="text/javascript" src="/WEB-INF/js/jquery-1.6.4.js"></script>
-<script type="text/javascript" src="/WEB-INF/js/lib-v1.js"></script>
-<script type="text/javascript" src="/WEB-INF/js/product.js"></script>
-<script type="text/javascript" src="/WEB-INF/js/iplocation_server.js"></script>
+<script type="text/javascript" src="/js/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="/js/lib-v1.js"></script>
+<script type="text/javascript" src="/js/product.js"></script>
+<script type="text/javascript" src="/js/iplocation_server.js"></script>
 <script type="text/javascript">
 	var itemControl = {
 			param:{
