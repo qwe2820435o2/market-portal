@@ -43,8 +43,8 @@ a:hover,a:active{color:#f00;text-decoration:underline;}
 #shortcut,
 #shortcut .w,
 #shortcut .fl b,
-#shortcut .menu b{background-image:url(../images/20111221C.png);background-repeat:no-repeat;}
-#shortcut li{background-image:url(../images/20120112B.png);background-repeat:no-repeat;}
+#shortcut .menu b{background-image:url(../WEB-INF/images/20111221C.png);background-repeat:no-repeat;}
+#shortcut li{background-image:url(../WEB-INF/images/20120112B.png);background-repeat:no-repeat;}
 #shortcut,
 #shortcut .w{height:30px;background-color:#efefef;background-repeat:repeat-x;}
 #shortcut{width:100%;padding-bottom:1px;line-height:30px;}
@@ -94,7 +94,7 @@ a:hover,a:active{color:#f00;text-decoration:underline;}
 #footer .authentication a { margin:0 5px; }
 /*logo*/
 #logo{padding:10px 0;position:relative;}
-#logo b{position:absolute;background:url(../images/regist-word.png) no-repeat;top:18px;left:180px;width:111px;height:46px;}
+#logo b{position:absolute;background:url(../WEB-INF/images/regist-word.png) no-repeat;top:18px;left:180px;width:111px;height:46px;}
 #shortcut .fl span{display:none}
 
 #intelligent-regName {
@@ -138,7 +138,7 @@ a:hover,a:active{color:#f00;text-decoration:underline;}
 
 /*shortcut*/
 #shortcut-2013 .fl b,
-#shortcut-2013 .fr b{background-image:url(../images/20130330A.png);background-repeat:no-repeat;}
+#shortcut-2013 .fr b{background-image:url(../WEB-INF/images/20130330A.png);background-repeat:no-repeat;}
 #shortcut-2013,
 #shortcut-2013 .w{height:30px;background:#FAFAFA;}
 #shortcut-2013{width:100%;border-bottom:1px solid #eee;line-height:30px;}
@@ -236,7 +236,7 @@ body,#regist .mt{background:#f2f2f2;}
     overflow: hidden;
     width: 15px;
     height: 15px;
-    background: url(../images/bg_thickbox.gif) no-repeat 0 -18px;
+    background: url(../WEB-INF/images/bg_thickbox.gif) no-repeat 0 -18px;
     font-size: 0;
     line-height: 100px;
 }
@@ -250,7 +250,7 @@ body,#regist .mt{background:#f2f2f2;}
 }
 
 .thickloading {
-    background: url(../images/loading.gif) #fff no-repeat center center;
+    background: url(../WEB-INF/images/loading.gif) #fff no-repeat center center;
 }
 
 .thickcountdown {

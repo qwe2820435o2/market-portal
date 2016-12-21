@@ -931,7 +931,7 @@ function SetNotifyByNoneStock(stockstatus,ext) {
 //        if ((ext&&ext.indexOf("YuShou")>-1)||checkApecialAttr("isKO")){
 //			pageConfig.product.YuShou=true;
 //            if(!window.Qiang){
-//                //$.ajax({url:"http://misc.360buyimg.com/product/js/2012/qiang.js?t=20140527",dataType:'script',cache:true});
+//                //$.ajax({url:"http://misc.360buyimg.com/product/WEB-INF/js/2012/qiang.js?t=20140527",dataType:'script',cache:true});
 //            }
 //            else{
 //                if ( Qiang&&Qiang.init ) {
@@ -997,7 +997,7 @@ function SetNotifyByNoneStock(stockstatus,ext) {
 //    if ((ext&&ext.indexOf("YuShou")>-1)||checkApecialAttr("isKO")){
 //		pageConfig.product.YuShou=true;
 //        if(!window.Qiang){
-//            $.ajax({url:"http://misc.360buyimg.com/product/js/2012/qiang.js?t=20140527",dataType:'script',cache:true}); 
+//            $.ajax({url:"http://misc.360buyimg.com/product/WEB-INF/js/2012/qiang.js?t=20140527",dataType:'script',cache:true});
 //        }
 //        else{
 //            if ( Qiang&&Qiang.init ) {

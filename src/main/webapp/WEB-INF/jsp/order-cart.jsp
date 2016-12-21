@@ -14,18 +14,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>订单结算页 -淘淘商城</title>
 	<!--结算页面样式-->	
-	<link rel="stylesheet" type="text/css" href="/css/base.css" media="all" />
-    <link type="text/css" rel="stylesheet"  href="/css/order-commons.css" source="widget"/>	
-	<script type="text/javascript" src="/js/jquery-1.6.4.js"></script>
-	<script type="text/javascript" src="/js/base.js"></script>	
-	<script type="text/javascript" src="/js/order.common.js"></script>
-	<script type="text/javascript" src="/js/jquery.checkout.js"></script>
+	<link rel="stylesheet" type="text/css" href="/WEB-INF/css/base.css" media="all" />
+    <link type="text/css" rel="stylesheet"  href="/WEB-INF/css/order-commons.css" source="widget"/>
+	<script type="text/javascript" src="/WEB-INF/js/jquery-1.6.4.js"></script>
+	<script type="text/javascript" src="/WEB-INF/js/base.js"></script>
+	<script type="text/javascript" src="/WEB-INF/js/order.common.js"></script>
+	<script type="text/javascript" src="/WEB-INF/js/jquery.checkout.js"></script>
 </head>	<body id="mainframe">
 <jsp:include page="commons/shortcut.jsp" />
 <!--shortcut end-->
 
 <div class="w w1 header clearfix">
-    <div id="logo"><a href="/"><img src="/images/taotao-logo.gif" alt="淘淘商城"></a></div>
+    <div id="logo"><a href="/"><img src="/WEB-INF/images/taotao-logo.gif" alt="淘淘商城"></a></div>
 </div>
 
 <form id="orderForm" class="hide" action="/order/create.html" method="post">

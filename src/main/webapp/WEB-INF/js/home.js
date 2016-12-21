@@ -78,7 +78,7 @@ function setClothingPlist2(t) {
 function setCheckEptArea() {
 //    var t = function(t) {
 //        if (0 !== t.type) {
-//            var e = $("#header-2013"), i = $('<div id="jd-ept-link" style="height: 60px;margin-bottom:10px;"></div>'), a = "http://en.jd.com/", n = '<div class="w" clstag="homepage|keycount|home2013|ept"><a target="_blank" href="' + a + '" style="display: block;text-align: center;border: 2px solid #F0AF00;background: #FFFBDD url(/images/blank.gif);">' + '<img style="vertical-align: top;" class="loading-style2" data-img="1" src="http://img11.360buyimg.com/da/g14/M03/1E/18/rBEhVlNUvcEIAAAAAAAgBol2wPcAAMVkwEJL5gAACAe087.png" width="874" height="56" />' + "</a></div>";
+//            var e = $("#header-2013"), i = $('<div id="jd-ept-link" style="height: 60px;margin-bottom:10px;"></div>'), a = "http://en.jd.com/", n = '<div class="w" clstag="homepage|keycount|home2013|ept"><a target="_blank" href="' + a + '" style="display: block;text-align: center;border: 2px solid #F0AF00;background: #FFFBDD url(/WEB-INF/images/blank.gif);">' + '<img style="vertical-align: top;" class="loading-style2" data-img="1" src="http://img11.360buyimg.com/da/g14/M03/1E/18/rBEhVlNUvcEIAAAAAAAgBol2wPcAAMVkwEJL5gAACAe087.png" width="874" height="56" />' + "</a></div>";
 //            i.html(n), e.after(i)
 //        }
 //    };
@@ -554,7 +554,7 @@ var Floors = {cacheData: null,data: function(t) {
         }}).init(), a(function(t) {
         var e = t.Identity && t.Identity.IsAuthenticated;
         e && (pageConfig.backTopFloor.add({cName: "home-setting",text: "\u6211\u8981\u8bbe\u7f6e",href: "#none",dir: "bottom",fn: function() {
-                "undefined" == typeof HomeSetting ? $.ajax({url: "http://misc.360buyimg.com/product/js/2013/home-settings.js",dataType: "script",cache: !0,scriptCharset: "utf-8"}) : HomeSetting.init("#home-setting")
+                "undefined" == typeof HomeSetting ? $.ajax({url: "http://misc.360buyimg.com/product/WEB-INF/js/2013/home-settings.js",dataType: "script",cache: !0,scriptCharset: "utf-8"}) : HomeSetting.init("#home-setting")
             }}), $(".backpanel .home-setting").attr("clstag", "homepage|keycount|home2013|dingzhi1"), Floors.init())
     }), pageConfig.enableArea && setArea(), function() {
         function t() {
@@ -634,12 +634,12 @@ var Floors = {cacheData: null,data: function(t) {
             m > y && y >= w ? (e(_), c(), T && r(M, F), P && l(L)) : (n.showControl ? b.add($).show() : b.add($).hide(), $.addClass(j), b.addClass(S))
         })
     }
-}(jQuery), pageConfig.TPL_MScroll = '<ul class="lh">    {for slide in list}    <li class="item fore${parseInt(slide_index)+1}" clstag="homepage|keycount|home2013|09b${parseInt(slide_index)+1}">        <a href="${slide.href}" target="_blank">            <img width="202" height="159" src="/images/blank.gif" class="loading-style2" data-lazyload="background:url(${slide.src}) no-repeat #fff center 0;" alt="${slide.alt}" /></a>    </li>    {/for}</ul>', $("#mscroll-list").imgScroll({width: screen.width >= 1200 ? 203 : 163,height: 159,visible: 3,step: 3,loop: !0,next: "#mscroll-ctrl-next",prev: "#mscroll-ctrl-prev",data: pageConfig.DATA_MScroll,template: pageConfig.TPL_MScroll}, function(t, e, i, a) {
+}(jQuery), pageConfig.TPL_MScroll = '<ul class="lh">    {for slide in list}    <li class="item fore${parseInt(slide_index)+1}" clstag="homepage|keycount|home2013|09b${parseInt(slide_index)+1}">        <a href="${slide.href}" target="_blank">            <img width="202" height="159" src="/WEB-INF/images/blank.gif" class="loading-style2" data-lazyload="background:url(${slide.src}) no-repeat #fff center 0;" alt="${slide.alt}" /></a>    </li>    {/for}</ul>', $("#mscroll-list").imgScroll({width: screen.width >= 1200 ? 203 : 163,height: 159,visible: 3,step: 3,loop: !0,next: "#mscroll-ctrl-next",prev: "#mscroll-ctrl-prev",data: pageConfig.DATA_MScroll,template: pageConfig.TPL_MScroll}, function(t, e, i, a) {
     a.find("img").each(function() {
         var t = $(this).attr("data-lazyload");
         $(this).attr("style") || $(this).attr("style", t).removeAttr("data-lazyload")
     })
-}), pageConfig.TPL_GScroll = '<ul class="lh">    {for slide in list}    {var x=pageConfig.FN_GetCompatibleData(slide)}        <li class="item fore${parseInt(slide_index)+1}">            <a href="${x.href}" target="_blank">                <img width="${x.width}" height="${x.height}" src="/images/blank.gif" style="background:url(${x.src}) no-repeat 0 0;" class="loading-style2" alt="${x.alt}" /></a>            <div class="p-detail">                <a target="_blank" class="btn-tuan" href="${x.href}">\u53c2\u56e2</a>                <span>\u56e2\u8d2d\u4ef7\uff1a</span><strong>\uffe5${x.price}</strong>            </div>        </li>    {/for}</ul>', $("#gscroll-list").imgScroll({width: screen.width >= 1200 ? 292 : 192,height: 155,visible: 1,step: 1,loop: !0,next: "#gscroll-ctrl-next",prev: "#gscroll-ctrl-prev",data: pageConfig.DATA_GScroll,template: pageConfig.TPL_GScroll}, function(t, e, i, a) {
+}), pageConfig.TPL_GScroll = '<ul class="lh">    {for slide in list}    {var x=pageConfig.FN_GetCompatibleData(slide)}        <li class="item fore${parseInt(slide_index)+1}">            <a href="${x.href}" target="_blank">                <img width="${x.width}" height="${x.height}" src="/WEB-INF/images/blank.gif" style="background:url(${x.src}) no-repeat 0 0;" class="loading-style2" alt="${x.alt}" /></a>            <div class="p-detail">                <a target="_blank" class="btn-tuan" href="${x.href}">\u53c2\u56e2</a>                <span>\u56e2\u8d2d\u4ef7\uff1a</span><strong>\uffe5${x.price}</strong>            </div>        </li>    {/for}</ul>', $("#gscroll-list").imgScroll({width: screen.width >= 1200 ? 292 : 192,height: 155,visible: 1,step: 1,loop: !0,next: "#gscroll-ctrl-next",prev: "#gscroll-ctrl-prev",data: pageConfig.DATA_GScroll,template: pageConfig.TPL_GScroll}, function(t, e, i, a) {
     a.find("img").each(function() {
         var t = $(this).attr("data-lazyload");
         $(this).attr("style") || $(this).attr("style", t).removeAttr("data-lazyload")

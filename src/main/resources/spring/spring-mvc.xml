@@ -21,13 +21,13 @@
     <!--静态资源映射-->
     <!--
     http://perfy315.iteye.com/blog/2008763
-    mapping="/js/**"
-    表示当浏览器有静态资源请求的时候，并且请求url路径中带有：/js/，则这个资源跑到webapp目录下的/WEB-INF/statics/js/去找
-    比如我们在 JSP 中引入一个 js 文件：src="${webRoot}/js/jQuery-core/jquery-1.6.1.min.js
+    mapping="/WEB-INF/js/**"
+    表示当浏览器有静态资源请求的时候，并且请求url路径中带有：/WEB-INF/js/，则这个资源跑到webapp目录下的/WEB-INF/statics/WEB-INF/js/去找
+    比如我们在 JSP 中引入一个 js 文件：src="${webRoot}/WEB-INF/js/jQuery-core/jquery-1.6.1.min.js
     -->
-    <!--<mvc:resources mapping="/css/**" location="/WEB-INF/statics/css/"/>
-    <mvc:resources mapping="/js/**" location="/WEB-INF/statics/js/"/>
-    <mvc:resources mapping="/images/**" location="/WEB-INF/statics/images/"/>-->
+    <!--<mvc:resources mapping="/WEB-INF/css/**" location="/WEB-INF/statics/WEB-INF/css/"/>
+    <mvc:resources mapping="/WEB-INF/js/**" location="/WEB-INF/statics/WEB-INF/js/"/>
+    <mvc:resources mapping="/WEB-INF/images/**" location="/WEB-INF/statics/WEB-INF/images/"/>-->
 
 
     <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀(如果最后一个还是表示文件夹,则最后的斜杠不要漏了) 使用JSP-->

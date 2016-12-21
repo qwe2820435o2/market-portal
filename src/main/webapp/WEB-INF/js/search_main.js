@@ -913,7 +913,7 @@ SEARCH.bind_events = {iplocation: (function(e, k) {
     },baby_info: function() {
         if ($("#babyQueryAttr").length == 1) {
             $.delayLoad(false, "http://misc.360buyimg.com/201007/skin/df/cal.css");
-            $.delayLoad(true, "http://misc.360buyimg.com/product/js/2013/jQuery.Jcal.min.js", "gbk", SEARCH.get_baby_info)
+            $.delayLoad(true, "http://misc.360buyimg.com/product/WEB-INF/js/2013/jQuery.Jcal.min.js", "gbk", SEARCH.get_baby_info)
         }
     },brandFolded: function() {
         if ($.browser.isIE6) {
@@ -1689,7 +1689,7 @@ SEARCH.image_scroll = function(a) {
 };
 window.surveyShowIndex = 0;
 function surveyShow() {
-    var a = $.delayLoad(false, "survey/css/surveyShowWindow.css"), b = $.delayLoad(true, "survey/js/surveyShowWindow.js?20140826.js", "utf-8");
+    var a = $.delayLoad(false, "survey/WEB-INF/css/surveyShowWindow.css"), b = $.delayLoad(true, "survey/WEB-INF/js/surveyShowWindow.js?20140826.js", "utf-8");
     if (surveyShowIndex === 0 && a && b) {
         surveyWindowShow()
     } else {
