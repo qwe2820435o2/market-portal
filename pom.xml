@@ -70,6 +70,7 @@
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
         <maven-dependency-plugin.version>2.5.1</maven-dependency-plugin.version>
         <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
+        <httpclient.version>4.3.5</httpclient.version>
         <!--插件版本变量 end-->
 
         <!--其他变量 start-->
@@ -98,7 +99,12 @@
 
     <!--架包依赖 start-->
     <dependencies>
-
+        <!-- httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
         <!-- ############################################################### Spring 相关包 start ############################################################### -->
         <!--spring 源码包下载地址：https://github.com/spring-projects/spring-framework/releases-->
         <!--http://takeme.iteye.com/blog/1977585-->
