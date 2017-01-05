@@ -4,9 +4,9 @@ import com.kris.portal.pojo.TbItem;
 import com.kris.portal.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author kris
@@ -18,10 +18,10 @@ public class ItemController {
     private ItemService itemService;
 
     @RequestMapping("/item/{itemId}")
-    @ResponseBody
-    private TbItem getItemById(@PathVariable Long itemId) {
+    private String getItemById(@PathVariable Long itemId, Model model) {
         TbItem item = itemService.getItemById(itemId);
-        return item;
+        model.addAttribute("item",item);
+        return "item";
     }
 
 }

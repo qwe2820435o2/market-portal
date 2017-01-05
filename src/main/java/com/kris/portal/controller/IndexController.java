@@ -19,11 +19,12 @@ public class IndexController {
     private ContentService mContentService;
 
     @RequestMapping("index")
-    public String showIndexPage(Model model){
+    public String showIndexPage(Model model) {
         //取大广告位内容
         String json = mContentService.getAdList();
         //传递给界面
         model.addAttribute("ad1", json);
         return "index";
     }
+
 }
