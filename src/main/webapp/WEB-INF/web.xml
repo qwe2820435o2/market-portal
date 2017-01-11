@@ -90,6 +90,11 @@
         <!-- 伪静态 -->
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SpringMVC</servlet-name>
+        <!-- 伪静态 -->
+        <url-pattern>*.action</url-pattern>
+    </servlet-mapping>
     <welcome-file-list>
         <welcome-file>/index.jsp</welcome-file>
     </welcome-file-list>
