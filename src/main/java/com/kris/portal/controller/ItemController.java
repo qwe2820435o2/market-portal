@@ -33,4 +33,10 @@ public class ItemController {
         return desc;
     }
 
+    @RequestMapping(value = "/item/param/{itemId}", produces = MediaType.TEXT_HTML_VALUE + ";charset=utf-8")
+    @ResponseBody
+    public String getItemParam(@PathVariable Long itemId) {
+        String paramHtml = itemService.getItemParamById(itemId);
+        return paramHtml;
+    }
 }
