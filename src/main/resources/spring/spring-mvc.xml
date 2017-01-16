@@ -48,5 +48,10 @@
         <property name="maxInMemorySize" value="4096"/>
     </bean>
     <!--文件上传 end-->
-
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/order/**"/>
+            <bean class="com.kris.portal.Interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>
