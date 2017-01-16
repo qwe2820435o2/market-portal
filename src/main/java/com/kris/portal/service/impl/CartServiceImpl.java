@@ -90,5 +90,8 @@ public class CartServiceImpl implements CartService {
         }
     }
 
-
+    public List<CartItem> getCartItems(HttpServletRequest request){
+        List<CartItem> list = getCartItemList(request);
+        return list;
+    }
 }

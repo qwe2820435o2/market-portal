@@ -1,9 +1,11 @@
 package com.kris.portal.service;
 
+import com.kris.portal.pojo.CartItem;
 import com.kris.portal.pojo.TaotaoResult;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * @author kris
@@ -11,4 +13,5 @@ import javax.servlet.http.HttpServletResponse;
  */
 public interface CartService {
     TaotaoResult addCart(Long itemId, Integer num, HttpServletRequest request, HttpServletResponse response);
+    List<CartItem> getCartItems(HttpServletRequest request);
 }
