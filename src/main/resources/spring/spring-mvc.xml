@@ -50,7 +50,8 @@
     <!--文件上传 end-->
     <mvc:interceptors>
         <mvc:interceptor>
-            <mvc:mapping path="/order/**"/>
+            <!--<mvc:mapping path="/order/**"/>-->
+            <mvc:mapping path="/pass/**"/><!--测试时不拦截-->
             <bean class="com.kris.portal.Interceptor.LoginInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>

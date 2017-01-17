@@ -119,6 +119,7 @@ public class CartServiceImpl implements CartService {
         //接收商品id
         //从cookie中取购物车商品列表
         List<CartItem> itemList = getCartItems(request);
+
         //找到对应id的商品
         for (CartItem cartItem:
              itemList) {
