@@ -6,6 +6,7 @@ var TTCart = {
 		$(".increment").click(function(){//＋
 			var _thisInput = $(this).siblings("input");
 			_thisInput.val(eval(_thisInput.val()) + 1);
+            //访问路径为action主要是.html后缀返回的json数据，框架不能解析，报406错误
 			$.post("/cart/update/num/"+_thisInput.attr("itemId")+"/"+_thisInput.val() + ".action",function(data){
 				TTCart.refreshTotalPrice();
 			});

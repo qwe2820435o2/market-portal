@@ -28,7 +28,7 @@ public class CartController {
     @RequestMapping("/cart/add/{itemId}")
     public String addCart(@PathVariable Long itemId, Integer num, HttpServletRequest request, HttpServletResponse response) {
         TaotaoResult result = mCartService.addCart(itemId, num, request, response);
-        return "cartSuccess";
+        return "cart-success";
     }
 
     @RequestMapping("/cart/cart")
