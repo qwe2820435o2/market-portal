@@ -35,6 +35,8 @@ public class LoginInterceptor implements HandlerInterceptor{
             httpServletResponse.sendRedirect(SSO_LOGIN_URL+"?redirectURL="+httpServletRequest.getRequestURI());
             return false;
         }
+        //把用户放入request中
+        httpServletRequest.setAttribute("user",user);
         //如果没有过期，放行
         return true;
     }
