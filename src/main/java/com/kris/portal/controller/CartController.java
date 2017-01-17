@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -37,5 +38,12 @@ public class CartController {
         //把商品列表传递给jsp
         model.addAttribute("cartList", list);
         return "cart";
+    }
+
+    @RequestMapping("/cart/update/num/{itemId}/{num}")
+    @ResponseBody
+    public TaotaoResult updateCartItemNum(@PathVariable Long itemId, @PathVariable Integer num, HttpServletRequest request, HttpServletResponse response) {
+        TaotaoResult result = mCartService.updateCartItem(itemId, num, request, response);
+        return result;
     }
 }
